@@ -45,6 +45,7 @@ import type { CheckoutContext } from "../workflows/checkout/index.js";
 import { PostgresTaskStore, tasksSequelize, TaskService, TaskEventBroker } from "./tasks/index.js";
 import { createTaskRoutes } from "./tasks/routes.js";
 import { DLQStore, DLQService, createDLQRoutes } from "./dlq/index.js";
+import { createMultiMerchantCheckoutRoutes } from "./routes/checkout.js";
 import type { ConnectionOptions } from "bullmq";
 import {
   IdempotencyStore,
@@ -512,6 +513,8 @@ async function main(): Promise<void> {
       ...createTaskRoutes(taskService, taskStore),
 
       ...(dlqService ? createDLQRoutes(dlqService) : []),
+
+      ...createMultiMerchantCheckoutRoutes(),
 
       route("POST", "/checkout", async (req, res) => {
         const authenticatedUserId = (req as typeof req & { userId?: string }).userId;
