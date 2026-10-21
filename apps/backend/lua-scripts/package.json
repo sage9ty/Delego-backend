@@ -5,8 +5,8 @@
   "type": "module",
   "main": "./src/index.ts",
   "scripts": {
-    "dev": "node --import tsx --watch src/index.ts",
-    "build": "echo 'TODO: add build'",
+    "dev": "node init && node --import tsx --watch src/index.ts",
+    "build": "node init && echo 'TODO: add build'",
     "test": "echo 'TODO: add tests'",
     "test:watch": "echo 'TODO: add tests'",
     "lint": "echo 'TODO: add eslint'",
