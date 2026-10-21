@@ -6,7 +6,7 @@ describe("validateDisputeResponseRequest", () => {
     const request = {
       disputeId: "dispute-123",
       responseStatement: "I received the goods in good condition",
-      evidenceAttachmentUrls: ["https://example.com/receipt.pdf"],
+      evidenceAttachmentUrls: ["https://storage.delego.io/evidence/receipt.pdf"],
       partialRefundAmountStroops: "1000",
     };
 
@@ -99,7 +99,7 @@ describe("validateDisputeResponseRequest", () => {
     const request = {
       disputeId: "dispute-123",
       responseStatement: "Response",
-      evidenceAttachmentUrls: ["https://example.com/malicious.exe"],
+      evidenceAttachmentUrls: ["https://storage.delego.io/evidence/malicious.exe"],
     };
 
     const result = validateDisputeResponseRequest(request);

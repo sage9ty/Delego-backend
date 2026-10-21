@@ -1,4 +1,4 @@
-/**
+/*
  * Dispute response API routes (Issue #112).
  *
  * Endpoints for merchants to submit responses, carrier delivery receipts,
