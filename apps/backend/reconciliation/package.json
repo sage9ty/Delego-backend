@@ -6,9 +6,9 @@
   "type": "module",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "dev": "tsx watch src/index.ts",
-    "start": "node dist/index.js",
+    "build": "node init && tsc",
+    "dev": "node init && tsx watch src/index.ts",
+    "start": "node init && node dist/index.js",
     "typecheck": "tsc --noEmit",
     "lint": "echo 'TODO: add eslint'",
     "test": "vitest run --passWithNoTests",

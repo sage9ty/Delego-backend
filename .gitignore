@@ -16,7 +16,6 @@ build/
 
 # IDE
 .idea/
-.vscode/
 *.swp
 *.swo
 *~
@@ -32,8 +31,6 @@ Thumbs.db
 .gitattributes
 
 # Environment
-.env
-.env.local
 .env.development.local
 .env.test.local
 .env.production.local
@@ -101,10 +98,6 @@ out/
 
 # Editor directories and files
 .editorconfig
-.vscode/*
-!.vscode/settings.json
-!.vscode/launch.json
-!.vscode/extensions.json
 *.sublime-project
 *.sublime-workspace
 *.suo
@@ -166,3 +159,8 @@ out/
 # Ignore pull request description file
 .prs/PR*.md
 pr_*.md
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
+config.bat

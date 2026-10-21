@@ -5,7 +5,7 @@
   "description": "Delego monitoring/alerting module (on-call schedules, escalation policies, alert routing) served by the gateway",
   "type": "module",
   "scripts": {
-    "build": "echo 'TODO: add build'",
+    "build": "node init && echo 'TODO: add build'",
     "typecheck": "echo 'TODO: add typecheck'",
     "lint": "echo 'TODO: add eslint'",
     "test": "echo 'TODO: add tests'"
